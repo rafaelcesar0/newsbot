@@ -109,7 +109,7 @@ export function Chatbot() {
             <div className="space-y-4 text-center">
               <h1 className="text-4xl font-semibold">Olá, me chamo Juli👋</h1>
               <span className="text-muted-foreground text-xl">
-                Sou uma assitente expecializada em pesquisar noticais, resumlas
+                Sou uma assitente expecializada em pesquisar noticais, resumilas
                 e criar artigos. <br />
                 Como posso te ajudar hoje?
               </span>
