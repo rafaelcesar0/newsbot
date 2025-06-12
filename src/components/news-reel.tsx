@@ -43,35 +43,11 @@ const mockNews: NewsArticle[] = [
     date: '2025-06-11',
     url: 'https://noticias.example.com/cupula-clima',
   },
-  {
-    id: '5',
-    title: 'Revolução no Transporte: Carros Elétricos Batem Recordes de Venda',
-    summary:
-      'Vendas de veículos elétricos crescem 150% no último trimestre, impulsionadas por incentivos governamentais e consciência ambiental.',
-    imageUrl: '/placeholder.svg?width=300&height=200&text=Carros+Elétricos',
-    category: 'Tecnologia',
-    date: '2025-06-12',
-    url: 'https://noticias.example.com/carros-eletricos',
-  },
-  {
-    id: '6',
-    title: 'Descoberta Arqueológica Revela Civilização Perdida',
-    summary:
-      'Arqueólogos descobrem ruínas de uma civilização de 3.000 anos no Peru, com artefatos únicos que reescrevem a história da região.',
-    imageUrl: '/placeholder.svg?width=300&height=200&text=Arqueologia',
-    category: 'História',
-    date: '2025-06-13',
-    url: 'https://noticias.example.com/descoberta-arqueologica',
-  },
 ]
 
 export default function NewsReel() {
   return (
     <div className="space-y-6">
-      <div className="mb-4 text-sm text-gray-500 dark:text-gray-400">
-        {mockNews.length} notícias disponíveis • Arraste para o chat para
-        discutir
-      </div>
       {mockNews.map((article) => (
         <NewsItem key={article.id} article={article} />
       ))}

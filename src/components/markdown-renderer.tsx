@@ -16,11 +16,11 @@ export default function MarkdownRenderer({ message }: MarkdownRendererProps) {
       remarkPlugins={[remarkGfm]}
       rehypePlugins={[rehypeRaw]}
       components={{
-        code({ node, inline, className, children, ...props }) {
+        code: ({ inline, className, children, ...props }: any) => {
           const match = (className || '').match(/language-(\w+)/)
           return !inline && match ? (
             <SyntaxHighlighter
-              style={dark}
+              style={dark as any}
               language={match[1]}
               PreTag="div"
               {...props}

@@ -1,10 +1,10 @@
 'use client'
-import { Home, MessageSquareText, Newspaper, Settings } from 'lucide-react'
+import { Home, MessageSquareText, Newspaper } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
-export type TabType = 'sidebar' | 'news' | 'chat' | 'settings'
+export type TabType = 'sidebar' | 'news' | 'chat'
 
 interface MobileTabsProps {
   activeTab: TabType
@@ -16,10 +16,9 @@ export default function MobileTabs({
   onTabChange,
 }: MobileTabsProps) {
   const tabs = [
+    { id: 'sidebar' as TabType, label: 'Menu', icon: Home },
     { id: 'news' as TabType, label: 'Notícias', icon: Newspaper },
     { id: 'chat' as TabType, label: 'Chat IA', icon: MessageSquareText },
-    { id: 'sidebar' as TabType, label: 'Menu', icon: Home },
-    { id: 'settings' as TabType, label: 'Config', icon: Settings },
   ]
 
   return (
