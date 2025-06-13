@@ -14,12 +14,12 @@ export default function HomePage() {
     <div className="flex h-screen flex-col overflow-hidden bg-gray-100 text-gray-900 md:flex-row dark:bg-gray-900 dark:text-gray-100">
       {/* Layout Desktop - Três Colunas */}
       <div className="hidden h-full w-full md:flex">
-        {/* Barra Lateral Esquerda */}
+        {/* Barra De Navegação */}
         <aside className="w-64 flex-shrink-0 bg-white p-5 shadow-lg dark:bg-gray-800">
           <LeftSidebar />
         </aside>
 
-        {/* Conteúdo Principal (Feed de Notícias) */}
+        {/* Feed de Notícias */}
         <main className="min-w-0 flex-1 overflow-y-auto p-6">
           <h1 className="mb-6 text-3xl font-semibold text-gray-800 dark:text-gray-200">
             Feed de Notícias
@@ -27,7 +27,7 @@ export default function HomePage() {
           <NewsReel />
         </main>
 
-        {/* Barra Lateral Direita (Chat com IA) */}
+        {/* Chat com IA */}
         <aside className="w-96 flex-shrink-0 border-l border-gray-200 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-800">
           <AiChat />
         </aside>
